@@ -5,11 +5,12 @@
   "packageManager": "^pnpm@6.32.4",
   "scripts": {
     "dev": "next dev",
+    "local": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,json}\"",
-    "prepare": "husky install"
+    "#prepare": "husky install"
   },
   "dependencies": {
     "@fontsource/alegreya-sans": "^4.5.9",

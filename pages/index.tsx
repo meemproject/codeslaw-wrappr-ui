@@ -4,13 +4,13 @@ import Minter from '~/minter'
 import { useAutoConnect } from '~/hooks'
 
 const Home: NextPage = () => {
-  useAutoConnect()
+	useAutoConnect()
 
-  return (
-    <Layout heading="Home" content="Wrappable entities">
-      <Minter />
-    </Layout>
-  )
+	return (
+		<Layout heading="Home" content="Wrappable entities">
+			<Minter />
+		</Layout>
+	)
 }
 
 export default Home
