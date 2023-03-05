@@ -8,7 +8,9 @@
     "local": "next dev",
     "build": "next build",
     "start": "next start",
+    "release": "semantic-release",
     "lint": "next lint",
+    "sls": "components-v1",
     "format": "prettier --write \"**/*.{ts,tsx,json}\"",
     "#prepare": "husky install"
   },
@@ -46,6 +48,7 @@
     "zustand": "^4.1.5"
   },
   "devDependencies": {
+    "@kengoldfarb/semantic-release-config": "^1.0.3",
     "@serverless/cli": "^1.6.0",
     "@types/formidable": "^2.0.5",
     "@types/lodash.merge": "^4.6.7",
