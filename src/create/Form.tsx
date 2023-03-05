@@ -219,7 +219,7 @@ export default function CreateForm({ store, setStore, setView }: Props) {
 					/>
 					<Textarea label="Description" id="description" placeholder="" {...register('description')} />
 					<Input
-						label="Admin"
+						label="Admin Contract Address"
 						id="admin"
 						{...register('admin')}
 						placeholder={ethers.constants.AddressZero}
@@ -228,7 +228,7 @@ export default function CreateForm({ store, setStore, setView }: Props) {
 					<Input
 						inputMode="numeric"
 						id="mintFee"
-						defaultValue={'0.1'}
+						defaultValue={'0'}
 						min={'0'}
 						label="Minting Fee"
 						error={errors.mintFee && errors.mintFee.message}

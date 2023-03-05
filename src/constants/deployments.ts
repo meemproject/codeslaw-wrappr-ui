@@ -111,13 +111,14 @@ export const deployments: { [key: number]: Contracts } = {
 	// Goerli
 	5: {
 		testnet: true,
-		factory: '0xA945f46Ca376B18fB34d809ef4F21f9b58AE4C50',
+		factory: '0x1240606EC9cD1655B26158d206C5Ffa45094d253',
 		deLLC: '0xaC4EF9D6fC426f8fFd188771d9C688890b634462',
 		wyLLC: '0x8d18D533047129dF8172feC7931a3933C47645D2',
 		deUNA: '0xE22ebfbD3e6609A9550a86545E37af7DE1EE688b',
 		wyUNA: '0x73Af00b92073D93b47e1077f796A3D6A12F63909',
 		lexCharter: '0xa958f8D815a037E8eDe8194DAD70f9A3f3f94041',
 		orCharter: '0x5228eBc680BA2Ac70A8dB9FBF01CEAaC9Dd9b2Ea',
-		subgraph: 'https://api.thegraph.com/subgraphs/name/nerderlyne/wrappr-goerli',
+		// subgraph: 'https://api.thegraph.com/subgraphs/name/nerderlyne/wrappr-goerli',
+		subgraph: 'https://api.studio.thegraph.com/query/18938/codeslaw/v0.0.1',
 	},
 }

@@ -78,6 +78,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 			notFound: true,
 		}
 
+	console.log({ url: deployments[chainId]['subgraph'], wrappr })
+
 	const res = await fetch(deployments[chainId]['subgraph'] as string, {
 		method: 'POST',
 		headers: {
@@ -100,6 +102,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 	})
 
 	const data = await res.json()
+
+	console.log({ data })
 
 	return {
 		props: { wrappr: data['data']['wrapprs'][0] },
